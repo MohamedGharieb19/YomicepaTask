@@ -1,4 +1,4 @@
-# YomicepaTask
+![image](https://github.com/user-attachments/assets/f53eb4a7-722a-42d2-b74f-9ccf0fd271a5)# YomicepaTask
  Pharmacy platform
 
 # Technologies:
@@ -13,3 +13,17 @@
 
 # Screenshots: 
 ![Screenshot 1](screenshots/loginScreen.png)
+![Screenshot 2](screenshots/pharmaciesScreen.png)
+![Screenshot 3](screenshots/returnRequestsScreen.png)
+![Screenshot 4](screenshots/createRequestScreen.png)
+![Screenshot 5](screenshots/addItemToRequest.png)
+![Screenshot 6](screenshots/followAddItemScreen.png)
+![Screenshot 7](screenshots/confirmationDialogOfAddItem.png)
+![Screenshot 8](screenshots/itemsInReturnRequest.png)
+![Screenshot 9](screenshots/editDescirptiontem.png)
+![Screenshot 10](screenshots/validationOnEditDescription.png)
+![Screenshot 11](screenshots/confirmationMessageBeforeDeleteItem.png)
+
+
+
+
