@@ -1,5 +1,7 @@
 # YomicepaTask
- Pharmacy platform
+ Pharmacy platform you can find the link to download the latest APK:
+
+[Download APK](app/release/app-release.apk)
 
 # Technologies:
 
