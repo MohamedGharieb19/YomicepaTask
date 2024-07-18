@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f53eb4a7-722a-42d2-b74f-9ccf0fd271a5)# YomicepaTask
+# YomicepaTask
  Pharmacy platform
 
 # Technologies:
