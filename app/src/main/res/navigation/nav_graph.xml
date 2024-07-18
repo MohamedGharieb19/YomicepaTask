@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.gharieb.yomicepatask.presentation.fragments.login.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_pharmaciesFragment"
+            app:destination="@id/pharmaciesFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/pharmaciesFragment"
+        android:name="com.gharieb.yomicepatask.presentation.fragments.pharmacies.view.PharmaciesFragment"
+        android:label="fragment_pharmacies"
+        tools:layout="@layout/fragment_pharmacies" >
+        <action
+            android:id="@+id/action_pharmaciesFragment_to_pharmacyDetailsFragment"
+            app:destination="@id/pharmacyDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pharmacyDetailsFragment"
+        android:name="com.gharieb.yomicepatask.presentation.fragments.pharmacyDetails.view.PharmacyDetailsFragment"
+        android:label="fragment_pharmacy_details"
+        tools:layout="@layout/fragment_pharmacy_details" >
+        <action
+            android:id="@+id/action_pharmacyDetailsFragment_to_createReturnRequestBottomSheet"
+            app:destination="@id/createReturnRequestBottomSheet" />
+    </fragment>
+    <dialog
+        android:id="@+id/createReturnRequestBottomSheet"
+        android:name="com.gharieb.yomicepatask.presentation.bottomSheet.createReturnRequest.view.CreateReturnRequestBottomSheet"
+        android:label="bottom_sheet_create_return_request"
+        tools:layout="@layout/bottom_sheet_create_return_request" >
+        <action
+            android:id="@+id/action_createReturnRequestBottomSheet_to_addItemFragment"
+            app:destination="@id/addItemFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/addItemFragment"
+        android:name="com.gharieb.yomicepatask.presentation.fragments.addItem.view.AddItemFragment"
+        android:label="fragment_add_item"
+        tools:layout="@layout/fragment_add_item" >
+        <action
+            android:id="@+id/action_addItemFragment_to_itemsFragment"
+            app:destination="@id/itemsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemsFragment"
+        android:name="com.gharieb.yomicepatask.presentation.fragments.addItem.view.ItemsFragment"
+        android:label="fragment_items"
+        tools:layout="@layout/fragment_items" >
+        <action
+            android:id="@+id/action_itemsFragment_to_editItemBottomSheet"
+            app:destination="@id/editItemBottomSheet" />
+    </fragment>
+    <dialog
+        android:id="@+id/editItemBottomSheet"
+        android:name="com.gharieb.yomicepatask.presentation.bottomSheet.editItemRequest.view.EditItemBottomSheet"
+        android:label="fragment_edit_item_bottom_sheet"
+        tools:layout="@layout/bottom_sheet_edit_item" />
+</navigation>
